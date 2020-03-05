@@ -1,0 +1,113 @@
+body 
+{
+	background-image: url("water.jpg"); 
+	background-color: #5D8AA8;
+	background-repeat: repeat;
+	background-position:center center;
+	background-size: 100%; 
+	font-family: sans-serif;
+	font-size:14px;}
+
+.grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: .5fr .05fr .5fr .5fr; 
+                grid-template-areas: 
+               " Education Skills Activities"
+               "Work Work Work"
+               " creative group staff"
+               "footer footer footer"
+               
+            }
+
+        
+ 
+
+h1, #head {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
+
+
+h1,h2,h3,h4{
+  color: #2B2D2F;
+  font-family: 'Lobster', cursive;
+  }
+
+
+
+h1,h2 {font-size: 20px;}
+
+h2{text-decoration: underline; 
+	text-decoration-style: solid;
+	text-decoration-color:#2B2D2F ; }
+
+h3 {font-size: 18px;}
+
+h4{font-size: 16px ;}
+
+p {
+  word-spacing: 30px;
+}
+
+background-image {opacity:.5;}
+
+/* unvisited link */
+a:link {
+  color: #2B2D2F;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #2B2D2F;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+#edu {grid-area: Education;}
+#work {grid-area: Work;}
+#creative {grid-area: creative;}
+#group {grid-area:group;}
+#staff {grid-area:staff;}
+#skills {grid-area:Skills;}
+#act {grid-area: Activities;}
+
+footer {grid-area: footer;
+
+		}
+
+#edu, #work, #skills, #act {
+  display: block;
+  margin-right: auto;
+  width: 25%;
+}
+
+.custom-list {width: 300px;
+  border: 5px solid #27445E;
+  padding: 50px;
+  margin: 20px;
+ background:white;
+
+}
+ 
+
+#footer {
+  background-color: white;
+text-align: center;
+  padding: 5px;
+  list-style-type:none;
+
+
+  }
+
+
+
+
